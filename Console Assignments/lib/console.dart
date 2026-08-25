@@ -5,8 +5,7 @@ import 'item.dart';
 import 'library.dart';
 import 'fee_calculator.dart';
 
-void main() {
-  
+void runLibrarySystem() {
   final library = Library('Central City Library');
 
   library.addItem(Book(
@@ -62,4 +61,8 @@ void main() {
   print('Overdue fee for $daysOverdue days late: \$$fee');
 
   library.displayInventory();
+}
+
+void main() {
+  runLibrarySystem();
 }
