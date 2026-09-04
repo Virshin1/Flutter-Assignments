@@ -1,4 +1,4 @@
-# 📱 Flutter Profile Card Screen (Assignment 4 Documentation)
+# 📱 Flutter Profile Card Screen (Assignment 3 Documentation)
 
 **Course:** Cross-Platform Mobile Application Development (Flutter & Dart)  
 **Student Name:** R Virshin  
@@ -11,7 +11,7 @@
 
 ## 1. Executive Summary & Assignment Objectives
 
-This project showcases a production-ready, highly polished Profile Card screen built with the Flutter SDK. The objective of Assignment 4 is to demonstrate mastery over core Flutter layout paradigms, responsive container styling, idiomatic widget composition, and custom theme architecture. The implementation strictly adheres to the patterns established within the `Cross-App` curriculum, integrating clean architectural domain modeling and sound Dart 3 null safety.
+This project showcases a production-ready, highly polished Profile Card screen built with the Flutter SDK. The objective of Assignment 3 is to demonstrate mastery over core Flutter layout paradigms, responsive container styling, idiomatic widget composition, and custom theme architecture. The implementation strictly adheres to the patterns established within the `Cross-App` curriculum, integrating clean architectural domain modeling and sound Dart 3 null safety.
 
 ### Key Objectives Fulfilled:
 - **Foundational Layout Widgets:** Seamlessly combining `Column` and `Row` widgets to establish primary and cross-axis alignment with zero overflow issues.
@@ -199,6 +199,6 @@ The automated test suite in `test/widget_test.dart` asserts that every mandatory
 
 ## 7. Conclusion & Learning Outcomes
 
-The Assignment 4 Profile Card project successfully demonstrates full competence in Flutter's foundational layout system. By structuring the user interface with cohesive widget hierarchies, applying custom Material 3 color palettes, and adhering to clean code conventions, the resulting application is both visually stunning and technically robust.
+The Assignment 3 Profile Card project successfully demonstrates full competence in Flutter's foundational layout system. By structuring the user interface with cohesive widget hierarchies, applying custom Material 3 color palettes, and adhering to clean code conventions, the resulting application is both visually stunning and technically robust.
 
 All requirements—including custom theme colors, responsive `Column` and `Row` layouts, rounded `Container` styling, dual `CircleAvatar`s, and integrated iconography—have been thoroughly implemented, tested, and visually confirmed.

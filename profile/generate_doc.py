@@ -122,7 +122,7 @@ def build_profile_doc(output_path, screenshot1_path, screenshot2_path):
     run_title.font.bold = True
     run_title.font.color.rgb = RGBColor(79, 70, 229)
 
-    run_sub = p_title.add_run("Assignment 4: Responsive UI Layout, Core Widgets & Material 3 Theming")
+    run_sub = p_title.add_run("Assignment 3: Responsive UI Layout, Core Widgets & Material 3 Theming")
     run_sub.font.name = 'Calibri'
     run_sub.font.size = Pt(12)
     run_sub.font.color.rgb = RGBColor(13, 148, 136)
@@ -168,7 +168,7 @@ def build_profile_doc(output_path, screenshot1_path, screenshot2_path):
     p = doc.add_paragraph()
     p.add_run(
         "This project showcases a production-ready, highly polished Profile Card screen built with the Flutter SDK. "
-        "The objective of Assignment 4 is to demonstrate mastery over core Flutter layout paradigms, responsive container styling, "
+        "The objective of Assignment 3 is to demonstrate mastery over core Flutter layout paradigms, responsive container styling, "
         "idiomatic widget composition, and custom theme architecture. The implementation strictly adheres to the patterns established "
         "within the Cross-App curriculum, integrating clean architectural domain modeling and sound Dart 3 null safety."
     )
@@ -503,7 +503,7 @@ No issues found! (ran in 4.2s)""")
 
     p_conc = doc.add_paragraph()
     p_conc.add_run(
-        "The Assignment 4 Profile Card project successfully demonstrates full competence in Flutter's foundational layout system. "
+        "The Assignment 3 Profile Card project successfully demonstrates full competence in Flutter's foundational layout system. "
         "By structuring the user interface with cohesive widget hierarchies, applying custom Material 3 color palettes, and adhering "
         "to clean code conventions, the resulting application is both visually stunning and technically robust. "
         "All requirements—including custom theme colors, responsive Column and Row layouts, rounded Container styling, dual CircleAvatars, "

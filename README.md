@@ -1,4 +1,4 @@
-# 📱 Flutter Profile Card Screen (Assignment 4)
+# 📱 Flutter Profile Card Screen (Assignment 3)
 
 A responsive, production-ready Flutter profile card interface engineered with foundational widgets (`Column`, `Row`, `Container`, `CircleAvatar`, `Text`, and `Icon`), custom theme architecture, sound null-safety practices, and Material 3 design principles.
 
@@ -148,4 +148,4 @@ $ flutter test
 - **Roll Number:** 150096724147
 - **Department:** Computer Science & Artificial Intelligence
 - **Course:** Cross-Platform Mobile Application Development (Flutter & Dart)
-- **Assignment:** Assignment 4 - Profile Card Screen
+- **Assignment:** Assignment 3 - Profile Card Screen
