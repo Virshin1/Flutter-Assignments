@@ -17,10 +17,29 @@ This repository branch houses **Assignment 6**, featuring an intermediate-level 
 
 ## 📄 Documentation Deliverables
 
-- **PDF Documentation**: [`product_app/DOCUMENTATION.pdf`](product_app/DOCUMENTATION.pdf) (8 pages, 2,200+ words excluding images, publication-ready with styled tables, code blocks, and metadata).
-- **Microsoft Word Documentation**: [`product_app/DOCUMENTATION.docx`](product_app/DOCUMENTATION.docx) (Formatted report with tables and callouts).
-- **Markdown Documentation**: [`product_app/DOCUMENTATION.md`](product_app/DOCUMENTATION.md) (Comprehensive technical architecture specification).
+- **PDF Documentation**: [`DOCUMENTATION.pdf`](DOCUMENTATION.pdf) or [`product_app/DOCUMENTATION.pdf`](product_app/DOCUMENTATION.pdf) (12 pages, publication-grade layout with embedded high-resolution screenshots, complete visual audit, and 2,500+ words of technical analysis).
+- **Microsoft Word Documentation**: [`DOCUMENTATION.docx`](DOCUMENTATION.docx) or [`product_app/DOCUMENTATION.docx`](product_app/DOCUMENTATION.docx) (Formatted report with tables, callouts, and embedded graphics).
+- **Markdown Documentation**: [`DOCUMENTATION.md`](DOCUMENTATION.md) or [`product_app/DOCUMENTATION.md`](product_app/DOCUMENTATION.md) (Comprehensive technical architecture specification).
 - **Project README**: [`product_app/README.md`](product_app/README.md) (Detailed feature breakdown, testing matrix, and local execution instructions).
+
+---
+
+## 📸 Visual Showcase & Workflow Walkthrough
+
+| Screen 1: Primary Catalog Overview | Screen 2: Product Detail Modal |
+|:---:|:---:|
+| ![Catalog Overview](screenshots/01_catalog_overview.png) | ![Product Detail](screenshots/02_product_detail_modal.png) |
+| *Virtualized ListView.builder with network imagery, category pills & badges* | *Modal bottom sheet with hero photo, specs, tags, and Add to Cart CTA* |
+
+| Screen 3: Reactive Cart Feedback | Screen 4: Sort & Filter Modal |
+|:---:|:---:|
+| ![Add to Cart SnackBar](screenshots/03_add_to_cart_snackbar.png) | ![Sort & Filter Modal](screenshots/04_sort_and_filter_modal.png) |
+| *Floating SnackBar with VIEW CART action and reactive badge counter* | *Sorting criteria radio chips & adaptive In Stock Only toggle switch* |
+
+| Screen 5: Interactive Shopping Cart Sheet |
+|:---:|
+| ![Interactive Shopping Cart](screenshots/05_shopping_cart_sheet.png) |
+| *Full slide-up CartSheet with quantity steppers, subtotal breakdown, and checkout CTA* |
 
 ---
 
@@ -63,3 +82,4 @@ dart analyze
 # Run on Chrome
 flutter run -d chrome
 ```
+

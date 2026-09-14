@@ -55,9 +55,15 @@ A production-grade, intermediate-level Flutter application demonstrating dynamic
 ```
 product_app/
 ├── README.md                           # Public overview, features, and quickstart guide
-├── DOCUMENTATION.pdf                   # Formatted 8-page PDF technical report (excluding screenshots)
-├── DOCUMENTATION.docx                  # Formatted Microsoft Word report with tables & styled callouts
-├── DOCUMENTATION.md                    # Comprehensive technical documentation (2,200+ words)
+├── DOCUMENTATION.pdf                   # Formatted publication-grade 12-page PDF report with embedded screenshots
+├── DOCUMENTATION.docx                  # Formatted Microsoft Word report with embedded graphics & tables
+├── DOCUMENTATION.md                    # Comprehensive technical documentation (2,500+ words)
+├── screenshots/                        # High-resolution Retina UI screenshots
+│   ├── 01_catalog_overview.png
+│   ├── 02_product_detail_modal.png
+│   ├── 03_add_to_cart_snackbar.png
+│   ├── 04_sort_and_filter_modal.png
+│   └── 05_shopping_cart_sheet.png
 ├── pubspec.yaml                        # Flutter package dependencies and configuration
 ├── lib/
 │   ├── main.dart                       # App entrypoint and Material 3 theme configuration
@@ -103,6 +109,23 @@ dart analyze
 6. ✅ **Shopping Cart Flow**: Verifies adding items updates the badge, opening `CartSheet` renders line items with steppers, and calculates free shipping and checkout total.
 7. ✅ **Static Analysis**: `dart analyze` passes with 0 errors and 0 warnings.
 
+## 📸 Visual Showcase & Workflow Walkthrough
+
+| Screen 1: Primary Catalog Overview | Screen 2: Product Detail Modal |
+|:---:|:---:|
+| ![Catalog Overview](screenshots/01_catalog_overview.png) | ![Product Detail](screenshots/02_product_detail_modal.png) |
+| *Virtualized ListView.builder with network imagery, category pills & badges* | *Modal bottom sheet with hero photo, specs, tags, and Add to Cart CTA* |
+
+| Screen 3: Reactive Cart Feedback | Screen 4: Sort & Filter Modal |
+|:---:|:---:|
+| ![Add to Cart SnackBar](screenshots/03_add_to_cart_snackbar.png) | ![Sort & Filter Modal](screenshots/04_sort_and_filter_modal.png) |
+| *Floating SnackBar with VIEW CART action and reactive badge counter* | *Sorting criteria radio chips & adaptive In Stock Only toggle switch* |
+
+| Screen 5: Interactive Shopping Cart Sheet |
+|:---:|
+| ![Interactive Shopping Cart](screenshots/05_shopping_cart_sheet.png) |
+| *Full slide-up CartSheet with quantity steppers, subtotal breakdown, and checkout CTA* |
+
 ---
 
 ## 🏃 Running Locally
@@ -122,3 +145,4 @@ flutter run -d macos
 - Press **`r`** to Hot Reload changes.
 - Press **`R`** to Hot Restart the application state.
 - Press **`q`** to quit the session.
+
