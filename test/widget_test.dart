@@ -10,8 +10,8 @@ void main() {
     await tester.pumpAndSettle();
 
     // Verify Home screen content
-    expect(find.text('Assignment 7 • Portal'), findsOneWidget);
-    expect(find.text('Welcome to\nRegistration Portal'), findsOneWidget);
+    expect(find.text('Nexus ID'), findsOneWidget);
+    expect(find.text('Next-Gen Identity &\nDigital Workspace'), findsOneWidget);
     expect(find.byKey(const Key('register_button')), findsOneWidget);
 
     // Tap register button
@@ -132,7 +132,7 @@ void main() {
     await tester.pumpAndSettle();
 
     // Verify Detail screen
-    expect(find.text('Registration Summary'), findsOneWidget);
+    expect(find.text('Member Profile'), findsOneWidget);
     expect(find.text('Virshin Kumar'), findsWidgets);
     expect(find.text('virshin@example.com'), findsWidgets);
     expect(find.text('9876543210'), findsOneWidget);
@@ -145,7 +145,7 @@ void main() {
     await tester.pumpAndSettle();
 
     // Back on Home screen
-    expect(find.text('Assignment 7 • Portal'), findsOneWidget);
+    expect(find.text('Nexus ID'), findsOneWidget);
   });
 
   testWidgets('Detail screen handles empty arguments gracefully',

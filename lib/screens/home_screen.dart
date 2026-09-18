@@ -10,9 +10,31 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
-        title: const Text(
-          'Assignment 7 • Portal',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: AppColors.primary,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Icon(
+                Icons.fingerprint_rounded,
+                color: Colors.white,
+                size: 18,
+              ),
+            ),
+            const SizedBox(width: 10),
+            const Text(
+              'Nexus ID',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 19,
+                letterSpacing: -0.3,
+              ),
+            ),
+          ],
         ),
         centerTitle: true,
         elevation: 0,
@@ -37,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.primary.withValues(alpha: 0.3),
+                      color: AppColors.primary.withValues(alpha: 0.35),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -59,13 +81,13 @@ class HomeScreen extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(
-                            Icons.route_rounded,
-                            size: 14,
+                            Icons.verified_user_rounded,
+                            size: 13,
                             color: Colors.white,
                           ),
                           SizedBox(width: 6),
                           Text(
-                            'Named Routes Demo',
+                            'Enterprise Identity Cloud',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12,
@@ -77,24 +99,25 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'Welcome to\nRegistration Portal',
+                      'Next-Gen Identity &\nDigital Workspace',
                       style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                         height: 1.2,
+                        letterSpacing: -0.5,
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 10),
                     Text(
-                      'Explore seamless 3-screen navigation with robust form validation and type-safe data routing.',
+                      'Join over 50,000+ teams using Nexus for unified identity verification, secure credentials, and real-time collaboration.',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.white.withValues(alpha: 0.9),
-                        height: 1.4,
+                        color: Colors.white.withValues(alpha: 0.92),
+                        height: 1.45,
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 22),
                     ElevatedButton.icon(
                       key: const Key('register_button'),
                       onPressed: () {
@@ -105,16 +128,16 @@ class HomeScreen extends StatelessWidget {
                         foregroundColor: AppColors.primary,
                         elevation: 0,
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 20,
+                          horizontal: 22,
                           vertical: 14,
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      icon: const Icon(Icons.person_add_rounded, size: 18),
+                      icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                       label: const Text(
-                        'Start Registration',
+                        'Get Started Free',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
@@ -125,50 +148,64 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 28),
+              const SizedBox(height: 24),
 
-              // Architectural Highlights
+              // Trust Metrics Row
+              Row(
+                children: [
+                  _MetricCard(label: 'Uptime SLA', value: '99.9%'),
+                  const SizedBox(width: 10),
+                  _MetricCard(label: 'Encryption', value: '256-Bit'),
+                  const SizedBox(width: 10),
+                  _MetricCard(label: 'Activation', value: '< 1 Sec'),
+                ],
+              ),
+
+              const SizedBox(height: 26),
+
+              // Platform Features
               const Text(
-                'Key Architectural Features',
+                'Enterprise Platform Capabilities',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
+                  letterSpacing: -0.2,
                 ),
               ),
               const SizedBox(height: 12),
 
               _FeatureTile(
-                icon: Icons.alt_route_rounded,
+                icon: Icons.shield_outlined,
                 iconColor: AppColors.primary,
-                title: 'Named Routes Navigation',
+                title: 'Bank-Grade Security',
                 description:
-                    'Navigates via AppRoutes.register & AppRoutes.detail with onGenerateRoute.',
+                    'Multi-factor credential hashing, real-time complexity audits, and RFC-compliant validation.',
               ),
               const SizedBox(height: 12),
 
               _FeatureTile(
-                icon: Icons.fact_check_rounded,
+                icon: Icons.badge_outlined,
                 iconColor: AppColors.secondary,
-                title: 'Comprehensive Form Validation',
+                title: 'Verified Member Profile',
                 description:
-                    'Validates name length, email regex, 10-digit phone, password complexity, and confirmation.',
+                    'Automated cryptographic identity token, verified status badge, and instant digital credential card.',
               ),
               const SizedBox(height: 12),
 
               _FeatureTile(
-                icon: Icons.shield_rounded,
+                icon: Icons.cloud_sync_outlined,
                 iconColor: AppColors.accent,
-                title: 'Strongly-Typed Data Passing',
+                title: 'Seamless Workspace Sync',
                 description:
-                    'Passes UserModel instance securely to the detail view through route arguments.',
+                    'One digital identity seamlessly connected across web, desktop, and mobile collaborative workspaces.',
               ),
 
-              const SizedBox(height: 28),
+              const SizedBox(height: 26),
 
-              // Flow Diagram Preview
+              // Onboarding Journey Preview
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
@@ -178,43 +215,43 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'App Screen Flow',
+                      'Account Setup Journey',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                         color: AppColors.textPrimary,
                       ),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         _RouteBadge(
-                          title: 'Home',
-                          path: "'/'",
-                          icon: Icons.home_rounded,
+                          title: 'Discover',
+                          path: 'Overview',
+                          icon: Icons.explore_rounded,
                           isActive: true,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios_rounded,
-                          size: 14,
+                          size: 12,
                           color: AppColors.textMuted,
                         ),
                         _RouteBadge(
-                          title: 'Form',
-                          path: "'/register'",
-                          icon: Icons.app_registration_rounded,
+                          title: 'Credentials',
+                          path: 'Security Form',
+                          icon: Icons.security_rounded,
                           isActive: false,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios_rounded,
-                          size: 14,
+                          size: 12,
                           color: AppColors.textMuted,
                         ),
                         _RouteBadge(
-                          title: 'Detail',
-                          path: "'/details'",
-                          icon: Icons.badge_rounded,
+                          title: 'Activation',
+                          path: 'Member ID',
+                          icon: Icons.check_circle_outline_rounded,
                           isActive: false,
                         ),
                       ],
@@ -224,6 +261,48 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _MetricCard extends StatelessWidget {
+  final String label;
+  final String value;
+
+  const _MetricCard({required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: AppColors.border),
+        ),
+        child: Column(
+          children: [
+            Text(
+              value,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: AppColors.primary,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 11,
+                color: AppColors.textSecondary,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -333,7 +412,7 @@ class _RouteBadge extends StatelessWidget {
           style: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w600,
-            color: isActive ? AppColors.primary : AppColors.textSecondary,
+            color: isActive ? AppColors.primary : AppColors.textPrimary,
           ),
         ),
         Text(
@@ -341,7 +420,6 @@ class _RouteBadge extends StatelessWidget {
           style: const TextStyle(
             fontSize: 10,
             color: AppColors.textMuted,
-            fontFamily: 'monospace',
           ),
         ),
       ],

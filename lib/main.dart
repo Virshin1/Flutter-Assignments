@@ -4,16 +4,18 @@ import 'constants/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const AssignmentApp());
+  runApp(const NexusApp());
 }
 
-class AssignmentApp extends StatelessWidget {
-  const AssignmentApp({super.key});
+typedef AssignmentApp = NexusApp;
+
+class NexusApp extends StatelessWidget {
+  const NexusApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Assignment 7 • 3-Screen App',
+      title: 'Nexus • Identity & Workspace Portal',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,

@@ -19,7 +19,7 @@ class DetailScreen extends StatelessWidget {
       backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text(
-          'Registration Summary',
+          'Member Profile',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
         centerTitle: true,
@@ -134,7 +134,7 @@ class DetailScreen extends StatelessWidget {
                 SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    'User registration verified and saved successfully!',
+                    'Account successfully activated • Nexus ID is live',
                     style: TextStyle(
                       color: AppColors.secondary,
                       fontSize: 13,

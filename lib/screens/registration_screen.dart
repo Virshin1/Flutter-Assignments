@@ -162,14 +162,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   child: const Row(
                     children: [
                       Icon(
-                        Icons.info_outline_rounded,
+                        Icons.shield_outlined,
                         color: AppColors.primary,
                         size: 22,
                       ),
                       SizedBox(width: 12),
                       Expanded(
                         child: Text(
-                          'Fill out the mandatory fields below. Your credentials will be validated against strict security rules.',
+                          'Set up your verified credentials to activate your secure Nexus account and personalized workspace profile.',
                           style: TextStyle(
                             fontSize: 13,
                             color: AppColors.primaryDark,
